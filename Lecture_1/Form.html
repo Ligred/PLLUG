@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+<div style="width: 33%; margin-left: 33%">
+    <form action="">
+        <fieldset>
+            <legend>Personal information</legend>
+
+            <fieldset>
+                <legend>Registration information</legend>
+                <p><b>* - required to fill the field</b></p>
+
+                <label for="fName">*Firt Name:</label>
+                <br>
+                <input type="text" id="fName" name="firstName" autofocus required>
+                <br>
+
+                <label for="sName">*Second Name:</label>
+                <br>
+                <input type="text" id="sName" name="secondName" required>
+                <br>
+
+                <label for="psd">*Password:</label>
+                <br>
+                <input type="password" id="psd" name="password" min="6" title="minimum 6 characters" required>
+                <br>
+
+                <label for="cpsd">*Confirm Password:</label>
+                <br>
+                <input type="password" id="cpsd" name="password" min="6" title="minimum 6 characters" required>
+                <br>
+
+                <label for="mail">*Email:</label>
+                <br>
+                <input type="email" id="mail" name="email" placeholder="123@gmail.com" required>
+                <br>
+
+                <label for="date">Birthday:</label>
+                <br>
+                <input type="date" id="date" name="bDate">
+                <br>
+
+                Gender:
+                <label><input type="radio" name="gender" value="male" checked>Male</label>
+                <label><input type="radio" name="gender" value="female">Female</label>
+                <label><input type="radio" name="gender" value="other">Other</label>
+                <br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Interests and hobbies</legend>
+
+                <label><input type="checkbox" name="interests" value="Sport">Sport</label>
+                <br>
+                <label><input type="checkbox" name="interests" value="Cars">Cars</label>
+                <br>
+                <label><input type="checkbox" name="interests" value="Games">Games</label>
+                <br>
+                <label><input type="checkbox" name="interests" value="Movies">Movies</label>
+                <br>
+                <label><input type="checkbox" name="interests" value="Coding">Coding</label>
+                <br>
+                <label><input type="checkbox" name="interests" value="Music">Music</label>
+                <br>
+                <label><input type="checkbox" name="interests" value="Dance">Dance</label>
+                <br>
+                <label><input type="checkbox" name="interests" value="No_interest" checked>No interest</label>
+                <br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Other information</legend>
+
+                <label for="color">Favorite color</label>
+                <br>
+                <input type="color" id="color" name="color">
+                <br>
+
+                <label for="ozer">Some about you:</label>
+                <br>
+                <textarea name="ozerInfo" id="ozer" cols="44" rows="10" placeholder="Type text..."></textarea>
+
+            </fieldset>
+
+            <br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
