@@ -8,7 +8,7 @@
 </head>
 <body>
 <div style="width: 33%; margin-left: 33%">
-    <form action="">
+    <form action="" method="post">
         <fieldset>
             <legend>Personal information</legend>
 
@@ -17,80 +17,77 @@
                 <p><b>* - required to fill the field</b></p>
 
                 <label for="fName">*Firt Name:</label>
-                <br>
+                <br />
                 <input type="text" id="fName" name="firstName" autofocus required>
-                <br>
+                <br />
 
                 <label for="sName">*Second Name:</label>
-                <br>
+                <br />
                 <input type="text" id="sName" name="secondName" required>
-                <br>
+                <br />
 
                 <label for="psd">*Password:</label>
-                <br>
+                <br />
                 <input type="password" id="psd" name="password" min="6" title="minimum 6 characters" required>
-                <br>
+                <br />
 
                 <label for="cpsd">*Confirm Password:</label>
-                <br>
+                <br />
                 <input type="password" id="cpsd" name="password" min="6" title="minimum 6 characters" required>
-                <br>
+                <br />
 
                 <label for="mail">*Email:</label>
-                <br>
+                <br />
                 <input type="email" id="mail" name="email" placeholder="123@gmail.com" required>
-                <br>
+                <br />
 
                 <label for="date">Birthday:</label>
-                <br>
+                <br />
                 <input type="date" id="date" name="bDate">
-                <br>
+                <br />
 
                 Gender:
                 <label><input type="radio" name="gender" value="male" checked>Male</label>
                 <label><input type="radio" name="gender" value="female">Female</label>
                 <label><input type="radio" name="gender" value="other">Other</label>
                 <br>
-
             </fieldset>
 
             <fieldset>
                 <legend>Interests and hobbies</legend>
 
                 <label><input type="checkbox" name="interests" value="Sport">Sport</label>
-                <br>
+                <br />
                 <label><input type="checkbox" name="interests" value="Cars">Cars</label>
-                <br>
+                <br />
                 <label><input type="checkbox" name="interests" value="Games">Games</label>
-                <br>
+                <br />
                 <label><input type="checkbox" name="interests" value="Movies">Movies</label>
-                <br>
+                <br />
                 <label><input type="checkbox" name="interests" value="Coding">Coding</label>
-                <br>
+                <br />
                 <label><input type="checkbox" name="interests" value="Music">Music</label>
-                <br>
+                <br />
                 <label><input type="checkbox" name="interests" value="Dance">Dance</label>
-                <br>
+                <br />
                 <label><input type="checkbox" name="interests" value="No_interest" checked>No interest</label>
-                <br>
-
+                <br />
             </fieldset>
 
             <fieldset>
                 <legend>Other information</legend>
 
                 <label for="color">Favorite color</label>
-                <br>
+                <br />
                 <input type="color" id="color" name="color">
-                <br>
+                <br />
 
                 <label for="ozer">Some about you:</label>
-                <br>
+                <br />
                 <textarea name="ozerInfo" id="ozer" cols="44" rows="10" placeholder="Type text..."></textarea>
-
             </fieldset>
 
-            <br>
+            <br />
             <input type="submit" value="Submit">
             <input type="reset" value="Reset">
 
