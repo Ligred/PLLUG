@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+}
+nav ul{
+    list-style-type: none;
+    background-color: green;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav li{
+    float: left;
+}
+li a {
+
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 15px;
+}
+.drop a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    background-color: green;
+}
+.drop {
+    display: none;
+    position: absolute;
+}
+.down:hover .drop{
+    display: block;
+}
+a:hover {
+    color: darkorange;
+}

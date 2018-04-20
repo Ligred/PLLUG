@@ -1,0 +1,49 @@
+div{
+    margin-bottom: 10px;
+}
+p.blurred {
+    font-family: 'Jua',  sans-serif;
+    text-shadow: 1px 1px 3px  black, -1px -1px 3px black;
+    font-size: 2em;
+}
+.square {
+    width: 200px;
+    height: 125px;
+    border-radius: 20px;
+    background-color: deepskyblue;
+    margin-left: 100px;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 60px solid deepskyblue;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    top: 20px;
+    left: 60px;
+}
+.container{
+    position: relative;
+}
+
+.show{
+    position: relative;
+    width: 200px;
+}
+.img2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+.show:hover .img2 {
+    display: block;
+    opacity: 1;
+    transition: 2s;
+}
+#gf {
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5em;
+}
