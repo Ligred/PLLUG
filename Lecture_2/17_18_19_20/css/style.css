@@ -1,0 +1,26 @@
+div {
+    margin: 10px;
+}
+.rectangle {
+    height: 50px;
+    width: calc(10% + 100px);
+    background-color: darkorange;
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding: calc((50px - 16px) /2);
+}
+.text-container {
+    width: 40%;
+}
+.letter-line::first-letter {
+    color: darkblue;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.letter-line::first-line {
+    color: deepskyblue;
+}
+.text:first-child, .text:last-child {
+    color:deepskyblue;
+}
