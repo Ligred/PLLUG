@@ -1,0 +1,50 @@
+div {
+    margin: 10px;
+}
+.cont {
+    width: 200px;
+    height: 170px;
+    background-color: deepskyblue;
+}
+div.cont:empty {
+    background-color: darkorange;
+}
+[data-name=w3r] {
+    color: deepskyblue;
+}
+[data-name^=w3r] {
+    color: deepskyblue;
+}
+ol {
+    list-style-position: inside;
+}
+li li li::before {
+    content: "2.3.";
+    float: left;
+}
+li li::before {
+    content: "2.";
+    float: left;
+}
+.box {
+    width: 200px;
+    height: 160px;
+    color: darkorange;
+    float: left;
+}
+.box1 {
+    background-color: deepskyblue;
+}
+.box2 {
+    background-color: white;
+    border: solid mediumslateblue 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+}
+.box3 {
+    background-color: darkblue;
+    padding: 40px 0 0 30px;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+}
