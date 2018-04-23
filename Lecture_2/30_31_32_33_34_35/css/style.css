@@ -1,0 +1,31 @@
+div {
+    margin: 10px;
+}
+h1 {
+    text-decoration: overline;
+    color: yellowgreen;
+    text-align: center;
+}
+div span {
+    color:fuchsia;
+}
+ol>li {
+    background-color: cornflowerblue;
+    display: inline-block;
+}
+em+a {
+    color:darkred;
+    font-size: 1.5em;
+}
+::-webkit-input-placeholder {
+    color: red;
+}
+::-moz-placeholder {
+    color: red;
+}
+:-moz-placeholder {
+    color: red;
+}
+:-ms-input-placeholder {
+    color: red;
+}

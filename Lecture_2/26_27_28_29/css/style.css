@@ -1,0 +1,54 @@
+div {
+    margin: 10px;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 150px;
+    box-sizing: border-box;
+}
+.box1 {
+    background: linear-gradient(blue, deepskyblue);
+}
+.box2 {
+    background: radial-gradient(blue, deepskyblue);
+}
+.box3 {
+    background: repeating-linear-gradient(to right bottom, deepskyblue 5%, blue 5%, white 10%);
+}
+.box4 {
+    background: repeating-radial-gradient(deepskyblue 5%, blue 5%, white 12%);
+}
+.border_image {
+    width: 40%;
+    height: 250px;
+    padding: calc((250px - 16px) / 2);
+    box-sizing: border-box;
+    border: 10px solid transparent;
+    border-image: url("http://vse-postroim.com/uploads/posts/2013-09/1380453005_6.jpg") 100 round;
+    text-align: center;
+}
+.column {
+    column-count: 4;
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+}
+a:link {
+    text-decoration: none;
+    color: darkorange;
+    text-shadow: 2px 2px 4px red;
+    font-size: 2em;
+}
+a:hover {
+    text-decoration: underline;
+    color: cornflowerblue;
+    text-shadow: 2px 2px 4px black;
+}
+a:active {
+    color: red;
+}
+a:visited {
+    color:black;
+}

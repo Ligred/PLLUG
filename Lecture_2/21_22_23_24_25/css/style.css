@@ -16,15 +16,12 @@ div.cont:empty {
     color: deepskyblue;
 }
 ol {
-    list-style-position: inside;
+    counter-reset: section;
+    list-style-type: none;
 }
-li li li::before {
-    content: "2.3.";
-    float: left;
-}
-li li::before {
-    content: "2.";
-    float: left;
+li::before {
+    counter-increment: section;
+    content: counters(section,".")" ";
 }
 .box {
     width: 200px;
