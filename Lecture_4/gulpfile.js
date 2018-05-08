@@ -49,20 +49,20 @@ gulp.task('img', function() {
 
 gulp.task('build', ['clean', 'img', 'sass'], function(){
 
-	let buildCss = gulp.src([
-		'app/css/slyle.css',
+	 let buildCss = gulp.src([
+		'app/css/style.css',
 		'app/css/icon.css'
 	])
-	.pipe(glup.dest('dist/css'))
+	.pipe(gulp.dest('dist/css'))
 
-	let buildFonts = gulp.src('app/font/**/*')
-	.pipe(gulp.dest('dist/font'))
+	let buildFonts = gulp.src('app/fonts/**/*')
+	.pipe(gulp.dest('dist/fonts'))
 
 	let buildJs = gulp.src('app/js/**/*')
 	.pipe(gulp.dest('dist/js'))
 
 	let buildHtml = gulp.src('app/*.html')
-	.pipe(gulp.dest('dist'))
+	.pipe(gulp.dest('dist'));
 });
 
 gulp.task('clear', function () {  // таска для очистки кешу
