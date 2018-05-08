@@ -1,4 +1,4 @@
-var gulp         = require('gulp'), //підключення gulp
+let gulp         = require('gulp'), //підключення gulp
     sass         = require('gulp-sass'), //підключення sass
     autoprefixer = require('gulp-autoprefixer'), // автопрефікси
     browserSync  = require('browser-sync'), // підключення browser-sync
@@ -47,18 +47,21 @@ gulp.task('img', function() {
         .pipe(gulp.dest('dist/img')); 
 });
 
-gulp.task('build', ['clean', 'img'], function(){  // Перенесення бібліотек в папку продакшина
+gulp.task('build', ['clean', 'img', 'sass'], function(){
 
-	var buildCss = gulp.src('app/css/**/*')
+	let buildCss = gulp.src([
+		'app/css/slyle.css',
+		'app/css/icon.css'
+	])
 	.pipe(glup.dest('dist/css'))
 
-	var buildFonts = gulp.src('app/font/**/*')
+	let buildFonts = gulp.src('app/font/**/*')
 	.pipe(gulp.dest('dist/font'))
 
-	var buildJs = gulp.src('app/js/**/*')
+	let buildJs = gulp.src('app/js/**/*')
 	.pipe(gulp.dest('dist/js'))
 
-	var buildHtml = gulp.src('app/*.html')
+	let buildHtml = gulp.src('app/*.html')
 	.pipe(gulp.dest('dist'))
 });
 

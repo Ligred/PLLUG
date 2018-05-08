@@ -1,0 +1,106 @@
+/*styles for header*/
+div.wraper_nav {
+  margin: 0 auto;
+  max-width: 1029px;
+}
+header {
+  padding-top: 43px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+div.wraper_nav {
+  margin: 0 auto;
+  max-width: 1029px;
+}
+div.container_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  nav {
+    ul{
+      list-style: none;
+      display: flex;
+      li {
+        margin-left: 40px;
+        a {
+          color: #ffffff;
+          font-family: "Roboto", Times, sans-serif;
+          font-size: 15px;
+          font-weight: 400;
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+        a:hover {
+          color: #90d23d;
+        }
+      }
+    }
+  }
+  div.item_logo {
+    width: 355px;
+    height: 65px;
+    position: relative;
+    background: url(../img/envato-bd-logo.png) no-repeat;
+    a {
+      display: flex;
+      width: 233px;
+      height: 65px;
+    }
+  }
+}
+div.baner {
+  height: 796px;
+  background: url("../img/hero-shot.png") no-repeat center top;
+  position: relative;
+  div.wraper_timer {
+    padding-top: 226px;
+    margin: 0 auto;
+    max-width: 972px;
+    div.container_timer {
+      box-sizing: border-box;
+      height: 198px;
+      border-radius: 20px;
+      border: 2px solid #90d23d;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 79px;
+      div.item_timer {
+        max-height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        span.number {
+          color: #ffffff;
+          font-family: "Roboto Slab", Times, serif;
+          font-size: 130px;
+          font-weight: 100;
+          text-transform: uppercase;
+          position: relative;
+          line-height: 130px;
+        }
+        span.number::after {
+          content: ":";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 100%;
+          margin-left: 30px;
+        }
+        span.last::after {
+          display: none;
+        }
+        span.time {
+          color: #ffffff;
+          font-family: "Roboto Slab", Times, serif;
+          font-size: 25px;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

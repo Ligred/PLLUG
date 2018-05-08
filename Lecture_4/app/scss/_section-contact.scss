@@ -1,0 +1,87 @@
+@import "mixin";
+
+section.contact {
+  height: 660px;
+  background: url("../img/map.png") no-repeat center top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div.contact_wrapper {
+    max-width: 970px;
+    box-shadow: 0 1px 2px rgba(35, 31, 32, 0.65);
+    background-color: #ffffff;
+    display: flex;
+    div.address {
+      text-align: center;
+      max-width: 259px;
+      margin: 100px 107px;
+      img {
+        display: block;
+        margin: 0 auto 37px;
+      }
+      p {
+        font-size: 18px;
+        margin-bottom: 27px;
+        letter-spacing: -0.2px
+      }
+      a {
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 400;
+        border-radius: 15px;
+        background-color: #90d23d;
+        text-decoration: none;
+        padding: 19px 43px 15px;
+        display: inline-block;
+      }
+    }
+    div.contact_form {
+      margin: 59px 71px 52px 0;
+      form {
+        display: flex;
+        flex-direction: column;
+        input {
+          width: 399px;
+          height: 53px;
+          border-radius: 5px;
+          border: 1px solid #bebebe;
+          color: #6c6c6c;
+          background-color: #ffffff;
+          font-size: 22px;
+          @include placeholder {
+            color: #bebebe;
+            font-size: 19px;
+            font-weight: 300;
+          }
+        }
+        input:focus, textarea:focus {
+          border: 1px solid #90d23d;
+          outline: none;
+        }
+        textarea {
+          width: 399px;
+          height: 250px;
+          margin: 28px 0;
+          border-radius: 5px;
+          border: 1px solid #bebebe;
+          background-color: #ffffff;
+          @include placeholder {
+            color: #bebebe;
+            font-size: 19px;
+            font-weight: 300;
+          }
+        }
+        input[type="submit"] {
+          width: 399px;
+          height: 60px;
+          border-radius: 5px;
+          background-color: #373737;
+          color: #ffffff;
+          font-size: 22px;
+          font-weight: 400;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

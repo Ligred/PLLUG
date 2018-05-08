@@ -1,20 +1,3 @@
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  color: #242424;
-  font-family: Roboto, Times, serif;
-  font-size: 14px;
-  letter-spacing: -0.1px;
-}
-
 /*styles for header*/
 div.wraper_nav {
   margin: 0 auto;
@@ -69,6 +52,10 @@ div.container_nav nav ul li a {
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+div.container_nav nav ul li a:hover {
+  color: #90d23d;
 }
 
 div.container_nav div.item_logo {
@@ -299,9 +286,9 @@ section.start div.wraper_form div.container_form div.wrapper_item div.item_form 
   border-radius: 5px;
   background-color: #90d23d;
   color: #ffffff;
-  font-family: Roboto, Times, serif;
   font-size: 22px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 section.start div.wraper_form div.container_comm {
@@ -531,4 +518,351 @@ section.elite div.wrapper_speak div.container_speak div.speak_items:nth-child(2)
 
 section.elite div.wrapper_speak div.container_speak div.speak_items:nth-child(2) div.icons a {
   text-decoration: none;
+}
+
+section.sponsor {
+  margin-top: 120px;
+}
+
+section.sponsor div.baner_sp {
+  background: url("../img/bg-sponsor.png") no-repeat center top;
+  height: 700px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+section.sponsor div.baner_sp div.sp_wrapper {
+  max-width: 625px;
+  text-align: center;
+}
+
+section.sponsor div.baner_sp div.sp_wrapper div.sp_text {
+  text-align: center;
+}
+
+section.sponsor div.baner_sp div.sp_wrapper div.sp_text h4 {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 28px;
+}
+
+section.sponsor div.baner_sp div.sp_wrapper div.sp_text p {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+section.sponsor div.baner_sp div.sp_wrapper div.sp_img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 50px;
+}
+
+section.sponsor div.baner_sp div.sp_wrapper a.btn {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background-color: #90d23d;
+  text-decoration: none;
+  padding: 19px 43px 15px;
+  display: inline-block;
+}
+
+section.sponsor div.past_events {
+  margin: 0 auto;
+  max-width: 1170px;
+  text-align: center;
+}
+
+section.sponsor div.past_events div.text {
+  margin: 80px 0 90px 100px;
+  max-width: 596px;
+  text-align: left;
+}
+
+section.sponsor div.past_events div.text h4 {
+  color: #242424;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 36px 0;
+}
+
+section.sponsor div.past_events div.event_img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  vertical-align: top;
+}
+
+section.sponsor div.past_events a {
+  text-align: center;
+  display: inline-block;
+  margin: 95px 0;
+  padding: 19px 48px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background-color: #373737;
+  text-decoration: none;
+}
+
+section.contact {
+  height: 660px;
+  background: url("../img/map.png") no-repeat center top;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+section.contact div.contact_wrapper {
+  max-width: 970px;
+  -webkit-box-shadow: 0 1px 2px rgba(35, 31, 32, 0.65);
+  box-shadow: 0 1px 2px rgba(35, 31, 32, 0.65);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.contact div.contact_wrapper div.address {
+  text-align: center;
+  max-width: 259px;
+  margin: 100px 107px;
+}
+
+section.contact div.contact_wrapper div.address img {
+  display: block;
+  margin: 0 auto 37px;
+}
+
+section.contact div.contact_wrapper div.address p {
+  font-size: 18px;
+  margin-bottom: 27px;
+  letter-spacing: -0.2px;
+}
+
+section.contact div.contact_wrapper div.address a {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  background-color: #90d23d;
+  text-decoration: none;
+  padding: 19px 43px 15px;
+  display: inline-block;
+}
+
+section.contact div.contact_wrapper div.contact_form {
+  margin: 59px 71px 52px 0;
+}
+
+section.contact div.contact_wrapper div.contact_form form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+section.contact div.contact_wrapper div.contact_form form input {
+  width: 399px;
+  height: 53px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #bebebe;
+  color: #6c6c6c;
+  background-color: #ffffff;
+  font-size: 22px;
+}
+
+section.contact div.contact_wrapper div.contact_form form input::-webkit-input-placeholder {
+  color: #bebebe;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+section.contact div.contact_wrapper div.contact_form form input:-moz-placeholder {
+  color: #bebebe;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+section.contact div.contact_wrapper div.contact_form form input::-moz-placeholder {
+  color: #bebebe;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+section.contact div.contact_wrapper div.contact_form form input:-ms-input-placeholder {
+  color: #bebebe;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+section.contact div.contact_wrapper div.contact_form form input:focus, section.contact div.contact_wrapper div.contact_form form textarea:focus {
+  border: 1px solid #90d23d;
+  outline: none;
+}
+
+section.contact div.contact_wrapper div.contact_form form textarea {
+  width: 399px;
+  height: 250px;
+  margin: 28px 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #bebebe;
+  background-color: #ffffff;
+}
+
+section.contact div.contact_wrapper div.contact_form form textarea::-webkit-input-placeholder {
+  color: #bebebe;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+section.contact div.contact_wrapper div.contact_form form textarea:-moz-placeholder {
+  color: #bebebe;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+section.contact div.contact_wrapper div.contact_form form textarea::-moz-placeholder {
+  color: #bebebe;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+section.contact div.contact_wrapper div.contact_form form textarea:-ms-input-placeholder {
+  color: #bebebe;
+  font-size: 19px;
+  font-weight: 300;
+}
+
+section.contact div.contact_wrapper div.contact_form form input[type="submit"] {
+  width: 399px;
+  height: 60px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #373737;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #90d23d;
+  padding: 60px 165px 40px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+footer div.contacts {
+  max-width: 377px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer div.contacts p.icon {
+  font-size: 45px;
+  margin: 0 0 33px;
+  line-height: 46px;
+}
+
+footer div.contacts p.icon a {
+  text-decoration: none;
+}
+
+footer div.contacts p.text {
+  margin: 0;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+footer a.go-up {
+  text-decoration: none;
+  padding: 10px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+footer a.go-up:hover {
+  -webkit-box-shadow: 1px 1px 2px black, 5px 5px 20px black;
+  box-shadow: 1px 1px 2px black, 5px 5px 20px black;
+}
+
+footer div.empty {
+  display: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #242424;
+  font-family: Roboto, Times, serif;
+  font-size: 14px;
+  letter-spacing: -0.1px;
 }
