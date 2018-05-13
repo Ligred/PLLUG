@@ -1,4 +1,5 @@
 alert("Hello world");
+console.log("Hello world");
 
 for (let i = 0, x = "!"; i < 7; i++) {
         console.log(x,"\n");
