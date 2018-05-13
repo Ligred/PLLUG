@@ -23,15 +23,13 @@ let h = +prompt("give me height", "8");
 let x = "";
 for(let i = 0, count = 1; i < h; i++) {
     for(let j = 0; j < w; j++) {
-        if (count % 2 !== 0) {
-            x += " ";
-        } else {
-            x += "#";
-        }
+        x += (count % 2 !== 0) ? " " : "#";
         count++;
     }
     x += "\n";
-    count++;
+    if (w % 2 !== 1) {
+        count++;
+    }
 }
 console.log(x);
 
