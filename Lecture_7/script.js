@@ -1,3 +1,4 @@
+console.log(`Task 1`);
 class Vec {
     constructor (x, y) {
         this.x = x;
@@ -28,7 +29,7 @@ console.log(new Vec(1, 2).minus(new Vec(2, 3)));
 console.log(new Vec(3, 4).length);
 
 ////////////////////////////////////////////////////////////////////////////////
-
+console.log(`Task 2`);
 class Group {
     constructor (value) {
         this.colection = value;
@@ -59,7 +60,40 @@ class Group {
 
 let group = Group.from([10, 20]);
 console.log(group.has(10));
+group.add(40);
 console.log(group.has(30));
 group.add(10);
 group.delete(10);
 console.log(group.has(10));
+
+
+/////////////////////////////////////////////////////////////////////////////
+console.log(`Task 3`);
+
+Group.prototype[Symbol.iterator] = function () {
+    let position = 0;
+    let collection = this.colection;
+
+    return {
+        next() {
+            if (position < collection.length) {
+                position++;
+                return {
+                    done: false,
+                    value: collection[position - 1]
+
+                };
+            } else {
+                return {
+                    done: true
+                };
+            }
+
+        }
+
+    }
+};
+
+for (let value of Group.from(["a", "b", "c"])) {
+    console.log(value);
+}
