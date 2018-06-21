@@ -97,3 +97,17 @@ Group.prototype[Symbol.iterator] = function () {
 for (let value of Group.from(["a", "b", "c"])) {
     console.log(value);
 }
+
+/////////////////////////////////////////////////////////////////////////////
+
+console.log(`Task 3`);
+
+let symbol = Symbol("hasOwnProperty");
+let map = {
+    one: true,
+    two: true,
+    [hasOwnProperty]: `I'm symbol`
+};
+
+console.log(map[hasOwnProperty]);
+console.log(map.hasOwnProperty("one"));
